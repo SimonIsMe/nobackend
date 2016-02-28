@@ -28,18 +28,6 @@ class Auth
     /**
      * @param string $projectId
      * @param string $email
-     * @param string $sessionId
-     *
-     * @return void
-     */
-    public static function logout($projectId, $email, $sessionId)
-    {
-        // TODO
-    }
-
-    /**
-     * @param string $projectId
-     * @param string $email
      * @param string $password
      *
      * @return void
@@ -63,5 +51,28 @@ class Auth
     private static function _hashPassword($password)
     {
         return sha1($password . Config::get('app.passwordSalt'));
+    }
+
+    /**
+     * @param string $projectId
+     * @param string $email
+     * @param string $sessionId
+     *
+     * @return void
+     */
+    public static function logout($projectId, $email, $sessionId)
+    {
+        // TODO
+    }
+
+    /**
+     * @param string $projectId
+     * @param string $email
+     *
+     * @return string
+     */
+    public static function getNewSessionId($projectId, $email)
+    {
+        //  todo
     }
 }
