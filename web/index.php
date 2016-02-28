@@ -1,6 +1,7 @@
 <?php
 
 use nobackend\Application;
+use nobackend\Auth;
 use nobackend\Request\ApiLoginRequest;
 use nobackend\Request\ApiLogoutRequest;
 use nobackend\Request\ApiRegisterRequest;
@@ -18,10 +19,9 @@ $app->get('/api/v1/register', function ()
 
     $email = $request->get('email');
     $password = $request->get('password');
-    $passwordRepeat = $request->get('password_repeat');
     $projectId = $request->get('project_id');
 
-//    Users::register($projectId, $email, $password);
+    Auth::register($projectId, $email, $password);
 
     return new JsonResponse([
         'status' => Application::STATUS_SUCCESS
@@ -39,17 +39,16 @@ $app->get('/api/v1/login', function ()
     $password = $request->get('password');
     $projectId = $request->get('project_id');
 
-//    $success = Users::login($projectId, $email, $password);
-//    if ($success) {
-//        $sessionId = Users::getNewSessionId($projectId, $email);
-//        return $app->json([
-//            'status' => 'success',
-//            'session_id' => $sessionId
-//        ]);
-//    }
+    $success = Auth::login($projectId, $email, $password);
+    if ($success) {
+        return new JsonResponse([
+            'status' => Application::STATUS_SUCCESS,
+            'session_id' => Auth::getNewSessionId($projectId, $email)
+        ]);
+    }
 
     return new JsonResponse([
-        'status' => Application::STATUS_SUCCESS
+        'status' => Application::STATUS_ERROR
     ]);
 });
 
@@ -64,7 +63,7 @@ $app->get('/api/v1/logout', function ()
     $sessionId = $request->get('session_id');
     $projectId = $request->get('project_id');
 
-//    Users::logout($projectId, $email, $sessionId);
+    Auth::logout($projectId, $email, $sessionId);
 
     return new JsonResponse([
         'status' => Application::STATUS_SUCCESS

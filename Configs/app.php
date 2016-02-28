@@ -1,4 +1,8 @@
 <?php
 return [
-    'debug' => true
+
+    'debug' => true,
+
+    'passwordSalt' => 'abcdefaDF3AUas!!@#542d%%fasdg234as**djfyIFASDFJKGH65@((65'
+
 ];
