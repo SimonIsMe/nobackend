@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 $loader = require_once __DIR__.'/../vendor/autoload.php';
 $app = new Application();
 
-$app->get('/api/v1/register', function ()
+$app->post('/api/v1/register', function ()
 {
     $request = ApiRegisterRequest::createFromGlobals();
     if (false == $request->validate()) {
@@ -28,7 +28,7 @@ $app->get('/api/v1/register', function ()
     ]);
 });
 
-$app->get('/api/v1/login', function ()
+$app->post('/api/v1/login', function ()
 {
     $request = ApiLoginRequest::createFromGlobals();
     if (false == $request->validate()) {
@@ -52,7 +52,7 @@ $app->get('/api/v1/login', function ()
     ]);
 });
 
-$app->get('/api/v1/logout', function ()
+$app->post('/api/v1/logout', function ()
 {
     $request = ApiLogoutRequest::createFromGlobals();
     if (false == $request->validate()) {
