@@ -2,7 +2,7 @@
 
 class StringLengthMaxValidator extends AbstractValidator
 {
-    protected $_errorMessage = 'Given value is too short.';
+    protected $_errorMessage = 'Given value is too long.';
 
     private $_max;
 
