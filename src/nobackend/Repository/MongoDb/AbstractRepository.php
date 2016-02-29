@@ -1,4 +1,4 @@
-<?php namespace nobackend\Repository\MongoDB;
+<?php namespace nobackend\Repository\MongoDb;
 
 use MongoDB\Driver\Cursor;
 use nobackend\Config;

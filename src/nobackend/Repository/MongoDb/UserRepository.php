@@ -1,4 +1,4 @@
-<?php namespace nobackend\Repository\MongoDB;
+<?php namespace nobackend\Repository\MongoDb;
 
 use nobackend\Repository\Contracts\UserRepositoryInterface;
 

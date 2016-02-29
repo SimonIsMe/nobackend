@@ -3,8 +3,8 @@
 use nobackend\Repository\Contracts\AbstractRepositoryInterface;
 use nobackend\Repository\Contracts\ProjectRepositoryInterface;
 use nobackend\Repository\Contracts\UserRepositoryInterface;
-use nobackend\Repository\MongoDB\ProjectRepository;
-use nobackend\Repository\MongoDB\UserRepository;
+use nobackend\Repository\MongoDb\ProjectRepository;
+use nobackend\Repository\MongoDb\UserRepository;
 
 class RepoFactory
 {
