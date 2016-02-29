@@ -1,6 +1,5 @@
 <?php
 
-use nobackend\Translate;
 use nobackend\Application;
 use nobackend\Auth;
 use nobackend\Request\ApiLoginRequest;
@@ -8,17 +7,15 @@ use nobackend\Request\ApiLogoutRequest;
 use nobackend\Request\ApiRegisterRequest;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
+require '../bootstrap.php';
 
-$loader = require_once __DIR__.'/../vendor/autoload.php';
-$app = new Application();
 
-function __($content, $language = null)
-{
-    $translate = Translate::getInstance();
-    return $translate->translate($content, $language);
-}
 
-$app->get('/api/v1/register', function ()
+$app->get('/hello', function () use ($app) {
+    return $app['twig']->render('hello.twig');
+});
+
+$app->post('/api/v1/register', function ()
 {
     $request = ApiRegisterRequest::createFromGlobals();
     if (false == $request->validate()) {

@@ -1,6 +1,7 @@
 <?php namespace nobackend;
 
 use nobackend\Repository\RepoFactory;
+use Silex\Provider\TwigServiceProvider;
 
 class Application extends \Silex\Application
 {
@@ -14,6 +15,7 @@ class Application extends \Silex\Application
         $this->_initRepository();
         $this->_initTranslate();
         $this->_initConfigs();
+        $this->_initRegister();
     }
 
     private function _initRepository()
@@ -29,5 +31,12 @@ class Application extends \Silex\Application
     private function _initConfigs()
     {
         $this['debug'] = Config::get('app.debug');
+    }
+
+    private function _initRegister()
+    {
+        $this->register(new TwigServiceProvider(), array(
+            'twig.path' => APP_WEB . '/../views',
+        ));
     }
 }
