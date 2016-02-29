@@ -48,7 +48,7 @@ class ValidateValue
 
         foreach ($this->_validators as $validator) {
             if ($validator->validate($value)) {
-                $this->_errors[] = $validator->getMessage();
+                $this->_errors[] = __($validator->getMessage());
                 $isValidate = false;
             }
         }

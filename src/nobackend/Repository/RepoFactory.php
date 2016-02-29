@@ -33,7 +33,7 @@ class RepoFactory
     public static function get($name)
     {
         if (null == self::$_repositories[$name]) {
-            throw new RepositoryNotFoundException('I can\'t repository under "' . $name . '" name."');
+            throw new RepositoryNotFoundException('I can\'t find repository under "' . $name . '" name."');
         }
 
         return self::$_repositories[$name];
