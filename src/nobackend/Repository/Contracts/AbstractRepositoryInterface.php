@@ -19,7 +19,7 @@ interface AbstractRepositoryInterface
      * @param string $projectId
      * @param array $data
      *
-     * @return void
+     * @return string
      */
     public function create($projectId, array $data);
 

@@ -50,13 +50,15 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      * @param string $projectId
      * @param array $data
      *
-     * @return void
+     * @return string
      */
     public function create($projectId, array $data)
     {
         $bulk = new BulkWrite();
         $bulk->insert($data);
         $this->_manager->executeBulkWrite($this->_getCollectionName($projectId), $bulk, new WriteConcern(WriteConcern::MAJORITY, 1000));
+
+        //  TODO:   return _id
     }
 
     /**

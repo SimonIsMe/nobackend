@@ -1,11 +1,15 @@
 <?php namespace nobackend;
 
+use nobackend\Mailer\AuthMailer;
 use nobackend\Repository\Contracts\UserRepositoryInterface;
 use nobackend\Repository\RepoFactory;
 use nobackend\Repository\RepositoryNotFoundException;
 
 class Auth
 {
+    const ACCOUNT_NO_ACTIVE = 0;
+    const ACCOUNT_ACTIVE = 1;
+
     /**
      * Return session ID.
      *
@@ -36,11 +40,17 @@ class Auth
      */
     public static function register($projectId, $email, $password)
     {
+        $activationToken = md5(microtime());
         $userRepo = RepoFactory::get(UserRepositoryInterface::NAME);
-        $userRepo->create($projectId, [
+        $userId = $userRepo->create($projectId, [
             'email' => $email,
-            'password' => self::_hashPassword($password)
+            'password' => self::_hashPassword($password),
+            'activationToken' => $activationToken,
+            'is_active' => self::ACCOUNT_NO_ACTIVE
         ]);
+
+        $mailer = new AuthMailer();
+        $mailer->register($userId, $activationToken);
     }
 
     /**
