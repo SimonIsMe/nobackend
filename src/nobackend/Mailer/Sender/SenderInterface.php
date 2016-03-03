@@ -11,5 +11,5 @@ interface SenderInterface
      *
      * @return void
      */
-    public function send($fromEmail, $fromName, $toEmail, $title, $body);
+    public function send(string $fromEmail, string $fromName, string $toEmail, string $title, string $body);
 }

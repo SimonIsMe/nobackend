@@ -13,7 +13,7 @@ class AuthMailer extends AbstractMailer
      *
      * @return void
      */
-    public function register($userId, $activationToken)
+    public function register(string $userId, string $activationToken)
     {
         $userData = RepoFactory::get(UserRepositoryInterface::NAME)->find($userId);
 

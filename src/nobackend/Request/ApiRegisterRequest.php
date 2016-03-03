@@ -11,7 +11,7 @@ class ApiRegisterRequest extends AbstractRequest
     /**
      * @return array
      */
-    protected  function _toValidate()
+    protected  function _toValidate() : array
     {
         return [
             'email' => [new RequiredValidator(), new EmailValidator()],

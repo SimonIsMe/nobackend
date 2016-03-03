@@ -15,7 +15,7 @@ class Translate
     /**
      * @return Translate
      */
-    public static function getInstance()
+    public static function getInstance() : Translate
     {
         if (null == self::$_instance) {
             self::$_instance = new Translate();
@@ -29,7 +29,7 @@ class Translate
      *
      * @return void
      */
-    public function setLanguage($language)
+    public function setLanguage(string $language)
     {
         $this->_language = $language;
     }
@@ -40,7 +40,7 @@ class Translate
      *
      * @return string
      */
-    public function translate($content, $language = null)
+    public function translate(string $content, string $language = null) : string
     {
         $language = null == $language ? $this->_language : $language;
 

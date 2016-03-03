@@ -8,5 +8,5 @@ interface RenderInterface
      *
      * @return array
      */
-    public function render($fileName, array $data = []);
+    public function render(string $fileName, array $data = []) : array;
 }

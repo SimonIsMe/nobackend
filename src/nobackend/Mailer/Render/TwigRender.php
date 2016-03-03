@@ -22,7 +22,7 @@ class TwigRender implements RenderInterface
      *
      * @return string
      */
-    public function render($file, array $data = [])
+    public function render(string $file, array $data = []) : string
     {
         return $this->_twig->render('hello.twig', array('name' => 'Fabien'));
     }

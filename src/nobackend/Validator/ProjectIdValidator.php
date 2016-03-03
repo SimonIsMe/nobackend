@@ -7,9 +7,9 @@ class ProjectIdValidator extends AbstractValidator
     /**
      * This method checks if value is correct.
      *
-     * @return boolean
+     * @return bool
      */
-    public function validate()
+    public function validate() : bool
     {
         return true;
     }

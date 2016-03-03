@@ -13,7 +13,7 @@ interface AbstractRepositoryInterface
      *
      * @return array
      */
-    public function findBy($projectId, $key, $value);
+    public function findBy(string $projectId, string $key, string $value);
 
     /**
      * @param string $projectId
@@ -21,7 +21,7 @@ interface AbstractRepositoryInterface
      *
      * @return string
      */
-    public function create($projectId, array $data);
+    public function create(string $projectId, array $data);
 
     /**
      * @param string $collectionName
@@ -29,6 +29,6 @@ interface AbstractRepositoryInterface
      *
      * @return Cursor
      */
-    public function query($collectionName, Query $query);
+    public function query(string $collectionName, Query $query);
 
 }

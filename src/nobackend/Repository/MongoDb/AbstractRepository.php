@@ -27,7 +27,7 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      *
      * @return array
      */
-    public function find($projectId, $id)
+    public function find(string $projectId, string $id) : array
     {
         $results = $this->query($this->_getCollectionName($projectId), new Query(['_id' => $id]));
         return $results->toArray();
@@ -40,7 +40,7 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      *
      * @return array
      */
-    public function findBy($projectId, $key, $value)
+    public function findBy(string $projectId, string $key, string $value) : array
     {
         $results = $this->query($this->_getCollectionName($projectId), new Query([$key => $value]));
         return $results->toArray();
@@ -52,7 +52,7 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      *
      * @return string
      */
-    public function create($projectId, array $data)
+    public function create(string $projectId, array $data) : string
     {
         $bulk = new BulkWrite();
         $bulk->insert($data);
@@ -67,7 +67,7 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      *
      * @return Cursor
      */
-    public function query($collectionName, Query $query)
+    public function query(string $collectionName, Query $query) : Cursor
     {
         return $this->_manager->executeQuery($collectionName, $query);
     }
@@ -77,9 +77,9 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      *
      * @return string
      */
-    protected function _getCollectionName($projectId)
+    protected function _getCollectionName(string $projectId) : string
     {
-        return $projectId . $this->_collectionName;
+        return $projectId . '.' . $this->_collectionName;
     }
 
 }

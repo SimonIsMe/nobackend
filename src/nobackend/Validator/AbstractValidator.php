@@ -9,16 +9,16 @@ abstract class AbstractValidator
     protected $_message;
 
     /**
-     * @return boolean
+     * @return bool
      */
-    abstract public function validate();
+    abstract public function validate() : bool;
 
     /**
      * @param string $value
      *
      * @return void
      */
-    public function setValue($value)
+    public function setValue(string $value)
     {
         $this->_value = $value;
     }
@@ -26,7 +26,7 @@ abstract class AbstractValidator
     /**
      * @return string
      */
-    public function getValue()
+    public function getValue() : string
     {
         return $this->_value;
     }
@@ -34,7 +34,7 @@ abstract class AbstractValidator
     /**
      * @return string
      */
-    public function getErrorMessage()
+    public function getErrorMessage() : string
     {
         return $this->_errorMessage;
     }
@@ -42,7 +42,7 @@ abstract class AbstractValidator
     /**
      * @return string
      */
-    public function getOkMessage()
+    public function getOkMessage() : string
     {
         return $this->_okMessage;
     }
@@ -50,17 +50,17 @@ abstract class AbstractValidator
     /**
      * @return string
      */
-    public function getMessage()
+    public function getMessage() : string
     {
         return $this->_message;
     }
 
     /**
-     * @param boolean $validationResult
+     * @param bool $validationResult
      *
      * @return void
      */
-    protected function _setMessage($validationResult)
+    protected function _setMessage(bool $validationResult)
     {
         if ($validationResult) {
             $this->_message = $this->_okMessage;

@@ -9,7 +9,7 @@ class StringLengthMaxValidator extends AbstractValidator
     /**
      * @param int $max
      */
-    public function __construct($max)
+    public function __construct(int $max)
     {
         $this->_max = $max;
     }
@@ -17,9 +17,9 @@ class StringLengthMaxValidator extends AbstractValidator
     /**
      * This method checks if value is correct.
      *
-     * @return boolean
+     * @return bool
      */
-    public function validate()
+    public function validate() : bool
     {
         if (null == $this->getValue()) {
             return true;

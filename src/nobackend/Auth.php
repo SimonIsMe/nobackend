@@ -17,11 +17,11 @@ class Auth
      * @param string $email
      * @param string $password
      *
-     * @return string
+     * @return bool
      *
      * @throws RepositoryNotFoundException
      */
-    public static function login($projectId, $email, $password)
+    public static function login(string $projectId, string $email, string $password) : bool
     {
         $userRepo = RepoFactory::get(UserRepositoryInterface::NAME);
         $user = $userRepo->findBy($projectId, 'email', $email);
@@ -38,7 +38,7 @@ class Auth
      *
      * @throws RepositoryNotFoundException
      */
-    public static function register($projectId, $email, $password)
+    public static function register(string $projectId, string $email, string $password)
     {
         $activationToken = md5(microtime());
         $userRepo = RepoFactory::get(UserRepositoryInterface::NAME);
@@ -58,7 +58,7 @@ class Auth
      *
      * @return string
      */
-    private static function _hashPassword($password)
+    private static function _hashPassword(string $password) : string
     {
         return sha1($password . Config::get('app.passwordSalt'));
     }
@@ -70,7 +70,7 @@ class Auth
      *
      * @return void
      */
-    public static function logout($projectId, $email, $sessionId)
+    public static function logout(string $projectId, string $email, string $sessionId)
     {
         // TODO
     }
@@ -81,7 +81,7 @@ class Auth
      *
      * @return string
      */
-    public static function getNewSessionId($projectId, $email)
+    public static function getNewSessionId(string $projectId, string $email) : string
     {
         //  todo
     }

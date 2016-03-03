@@ -30,7 +30,7 @@ class RepoFactory
      *
      * @throws RepositoryNotFoundException
      */
-    public static function get($name)
+    public static function get(string $name) : AbstractRepositoryInterface
     {
         if (null == self::$_repositories[$name]) {
             throw new RepositoryNotFoundException('I can\'t find repository under "' . $name . '" name."');

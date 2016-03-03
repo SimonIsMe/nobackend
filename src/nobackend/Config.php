@@ -9,11 +9,11 @@ class Config
     }
 
     /**
-     * @param $key
+     * @param string $key
      *
      * @return mixed
      */
-    public static function get($key)
+    public static function get(string $key)
     {
         $parts = explode('.', $key);
         if (false == isset(self::$_cached[$parts[0]])) {
@@ -25,7 +25,7 @@ class Config
 
     /**
      * @param array $parts
-     * @param array $arrayConfig
+     * @param array &$arrayConfig
      *
      * @return mixed
      */

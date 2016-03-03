@@ -40,9 +40,9 @@ class ValidateValue
     /**
      * @param array $value
      *
-     * @return boolean
+     * @return bool
      */
-    public function validate($value)
+    public function validate(array $value) : bool
     {
         $isValidate = true;
 
@@ -59,7 +59,7 @@ class ValidateValue
     /**
      * @return array
      */
-    public function getErrors()
+    public function getErrors() : array
     {
         return $this->_errors;
     }

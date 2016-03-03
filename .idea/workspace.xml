@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d17741b-fdb1-4326-9a91-aa5eb2b2b779" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Auth.php" afterPath="$PROJECT_DIR$/src/nobackend/Auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Config.php" afterPath="$PROJECT_DIR$/src/nobackend/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/AbstractMailer.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/AbstractMailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/AuthMailer.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/AuthMailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php" afterPath="$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Repository/Contracts/AbstractRepositoryInterface.php" afterPath="$PROJECT_DIR$/src/nobackend/Repository/Contracts/AbstractRepositoryInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php" afterPath="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Repository/RepoFactory.php" afterPath="$PROJECT_DIR$/src/nobackend/Repository/RepoFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Request/AbstractRequest.php" afterPath="$PROJECT_DIR$/src/nobackend/Request/AbstractRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php" afterPath="$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php" afterPath="$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php" afterPath="$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Translate.php" afterPath="$PROJECT_DIR$/src/nobackend/Translate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/AbstractValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/AbstractValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/RequiredValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/RequiredValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMinValidator.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMinValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php" afterPath="$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php" />
     </list>
     <ignored path="nobackend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,15 +49,23 @@
     <favorites_list name="nobackend" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/nobackend/Auth.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AbstractRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55813956">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-              <folding>
-                <element signature="e#28#60#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-18.32">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.114617944">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,18 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php" />
-        <option value="$PROJECT_DIR$/Configs/application.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Config.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/Contracts/UserInterface.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/Contracts/ProjectInterface.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/MongoUserRepository.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/MongoProjectRepository.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/Factory.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/Contracts/UserRepositoryInterface.php" />
@@ -72,12 +91,8 @@
         <option value="$PROJECT_DIR$/src/nobackend/Repository/Users.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/RepositoryNotFoundException.php" />
         <option value="$PROJECT_DIR$/Configs/app.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Translate.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/ProjectRepository.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/UserRepository.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/RepoFactory.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php" />
         <option value="$PROJECT_DIR$/Translate/pl_PL.php" />
         <option value="$PROJECT_DIR$/Translate/en_GB.php" />
         <option value="$PROJECT_DIR$/Configs/mail.php" />
@@ -86,23 +101,39 @@
         <option value="$PROJECT_DIR$/src/nobackend/Mailer.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Mailer/User.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Mailer/Auth.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/AuthMailer.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Mailer/MailerRenderer.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/MailerRenderer.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRenderer.php" />
         <option value="$PROJECT_DIR$/views/emails/register.twig" />
         <option value="$PROJECT_DIR$/web/bootstrap.php" />
-        <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Application.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/AbstractMailer.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php" />
-        <option value="$PROJECT_DIR$/src/nobackend/Repository/Contracts/AbstractRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Request/AbstractRequest.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php" />
         <option value="$PROJECT_DIR$/src/nobackend/Auth.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Config.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Translate.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/AbstractValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/RequiredValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/StringLengthMinValidator.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Repository/RepoFactory.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Repository/Contracts/AbstractRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/AuthMailer.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/AbstractMailer.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php" />
+        <option value="$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php" />
+        <option value="$PROJECT_DIR$/web/index.php" />
       </list>
     </option>
   </component>
@@ -188,38 +219,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nobackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nobackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emails" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nobackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nobackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -246,7 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Mailer" />
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,11 +267,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Mailer" />
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Sender" />
+              <option name="myItemId" value="MongoDb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,13 +291,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file:///home/szymon/nobackend/web/index.php&#10;not found exce&#9;FILE&#9;file:///home/szymon/nobackend/src/nobackend/Repository/RepositoryNotFoundException.php&#10;repofac&#9;FILE&#9;file:///home/szymon/nobackend/src/nobackend/Repository/RepoFactory.php&#10;index&#9;FILE&#9;file:///home/szymon/nobackend/web/index.php&#10;auth&#9;FILE&#9;file:///home/szymon/nobackend/src/nobackend/Auth.php&#10;proje&#9;FILE&#9;file:///home/szymon/nobackend/src/nobackend/Repository/MongoDb/ProjectRepository.php&#10;Silex\ControllerCollect&#9;null&#9;null" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -405,14 +406,20 @@
       <option name="project" value="LOCAL" />
       <updated>1456787409269</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Sending email">
+      <created>1456817190089</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456817190089</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="21" width="1309" height="747" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21468034" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21783741" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -453,7 +460,8 @@
     <MESSAGE value="Fix bug" />
     <MESSAGE value="Translate validations" />
     <MESSAGE value="Sending email after registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sending email after registration" />
+    <MESSAGE value="Sending email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sending email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -523,56 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/AbstractRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47009966">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37209302">
-          <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10631229">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053156145">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0933334">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/Contracts/ProjectRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10666667">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/Contracts/UserRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10666667">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Configs/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13333334">
@@ -594,93 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Translate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1466666">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/AbstractValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.96">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/ProjectRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18666667">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/RepositoryNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13333334">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.84">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.12">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/RequiredValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.56">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.56">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/StringLengthMinValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.56">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48166665">
-          <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Translate/en_GB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.026666667">
@@ -692,13 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21333334">
           <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10666667">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -730,48 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053333335">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0133333">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21333334">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026666667">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45333335">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5466666">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24">
@@ -779,18 +601,200 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/AbstractRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29235882">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiRegisterRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.76">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiLogoutRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31893688">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#36#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Request/ApiLoginRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31893688">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#36#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9833887">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2923588">
+          <caret line="83" column="85" selection-start-line="83" selection-start-column="85" selection-end-line="83" selection-end-column="85" />
+          <folding>
+            <element signature="e#28#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55813956">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Translate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4950166">
+          <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/EqualsValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50498337">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/EmailValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23920266">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/AbstractValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29235882">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/ProjectIdValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29235882">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/StringLengthMaxValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50498337">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/SessionIdValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29235882">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/RequiredValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29235882">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/StringLengthMinValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50498337">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Validator/ValidateValue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73421925">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/RepositoryNotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13289036">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/RepoFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74418604">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.627907">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/Contracts/ProjectRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10631229">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/Contracts/UserRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10631229">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18604651">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/ProjectRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/AuthMailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45182723">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.3986711">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
           <folding>
             <element signature="e#35#56#0#PHP" expanded="true" />
           </folding>
@@ -799,37 +803,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/AbstractMailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8820598">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.7873754">
+          <caret line="32" column="116" selection-start-line="32" selection-start-column="116" selection-end-line="32" selection-end-column="116" />
           <folding>
             <element signature="e#35#73#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Sender/PhpSender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34551495">
+          <caret line="13" column="101" selection-start-line="13" selection-start-column="101" selection-end-line="13" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Sender/SenderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34551495">
+          <caret line="13" column="101" selection-start-line="13" selection-start-column="101" selection-end-line="13" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Render/RenderInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26578072">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nobackend/Mailer/Render/TwigRender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6112957">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/Contracts/AbstractRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5215947">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state vertical-scroll-proportion="-19.2">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nobackend/Repository/MongoDb/AbstractRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29401994">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state vertical-scroll-proportion="-18.32">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nobackend/Auth.php">
+    <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55813956">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding>
-            <element signature="e#28#60#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.114617944">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

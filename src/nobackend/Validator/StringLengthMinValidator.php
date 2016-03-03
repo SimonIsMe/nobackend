@@ -9,7 +9,7 @@ class StringLengthMinValidator extends AbstractValidator
     /**
      * @param int $min
      */
-    public function __construct($min)
+    public function __construct(int $min)
     {
         $this->_min = $min;
     }
@@ -17,9 +17,9 @@ class StringLengthMinValidator extends AbstractValidator
     /**
      * This method checks if value is correct.
      *
-     * @return boolean
+     * @return bool
      */
-    public function validate()
+    public function validate() : bool
     {
         if (null == $this->getValue()) {
             return true;

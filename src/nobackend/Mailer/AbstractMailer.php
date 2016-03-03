@@ -30,7 +30,7 @@ class AbstractMailer
      *
      * @return void
      */
-    protected function _send($fromEmail, $fromName, $title, $viewName, array $data = [])
+    protected function _send(string $fromEmail, string $fromName, string $title, string $viewName, array $data = [])
     {
         $body = $this->_render->render($viewName, $data);
         $this->_sender->send($fromEmail, $fromName, $title, $body);

@@ -11,12 +11,12 @@ abstract class AbstractRequest extends Request
     /**
      * @return array
      */
-    abstract protected function _toValidate();
+    abstract protected function _toValidate() : array;
 
     /**
      * @return boolean
      */
-    public function validate()
+    public function validate() : bool
     {
         foreach ($this->_toValidate() as $key => $validators) {
             $value = $this->get($key);
@@ -34,7 +34,7 @@ abstract class AbstractRequest extends Request
     /**
      * @return Response
      */
-    public function getErrorResponse()
+    public function getErrorResponse() : Response
     {
         return new JsonResponse($this->_errors);
     }
