@@ -1,10 +1,14 @@
 <?php namespace nobackend\Repository;
 
-use nobackend\Repository\Contracts\AbstractRepositoryInterface;
-use nobackend\Repository\Contracts\ProjectRepositoryInterface;
-use nobackend\Repository\Contracts\UserRepositoryInterface;
-use nobackend\Repository\MongoDb\ProjectRepository;
-use nobackend\Repository\MongoDb\UserRepository;
+use nobackend\Repository\Contracts\{
+    AbstractRepositoryInterface,
+    ProjectRepositoryInterface,
+    UserRepositoryInterface
+};
+use nobackend\Repository\MongoDb\{
+    ProjectRepository,
+    UserRepository
+};
 
 class RepoFactory
 {

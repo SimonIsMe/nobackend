@@ -1,9 +1,11 @@
 <?php namespace nobackend\Request;
 
-use nobackend\Validator\EmailValidator;
-use nobackend\Validator\ProjectIdValidator;
-use nobackend\Validator\RequiredValidator;
-use nobackend\Validator\StringLengthMinValidator;
+use nobackend\Validator\{
+    EmailValidator,
+    ProjectIdValidator,
+    RequiredValidator,
+    StringLengthMinValidator
+};
 
 class ApiLoginRequest extends AbstractRequest
 {

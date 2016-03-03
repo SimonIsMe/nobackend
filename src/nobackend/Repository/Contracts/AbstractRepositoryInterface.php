@@ -1,7 +1,9 @@
 <?php namespace nobackend\Repository\Contracts;
 
-use \MongoDB\Driver\Cursor;
-use \MongoDB\Driver\Query;
+use \MongoDB\Driver\{
+    Cursor,
+    Query
+};
 
 interface AbstractRepositoryInterface
 {

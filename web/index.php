@@ -1,10 +1,14 @@
 <?php
 
-use nobackend\Application;
-use nobackend\Auth;
-use nobackend\Request\ApiLoginRequest;
-use nobackend\Request\ApiLogoutRequest;
-use nobackend\Request\ApiRegisterRequest;
+use nobackend\{
+    Application,
+    Auth
+};
+use nobackend\Request\{
+    ApiLoginRequest,
+    ApiLogoutRequest,
+    ApiRegisterRequest
+};
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 require '../bootstrap.php';
@@ -15,7 +19,7 @@ $app->get('/hello', function () use ($app) {
     return $app['twig']->render('hello.twig');
 });
 
-$app->post('/api/v1/register', function ()
+$app->get('/api/v1/register', function ()
 {
     $request = ApiRegisterRequest::createFromGlobals();
     if (false == $request->validate()) {

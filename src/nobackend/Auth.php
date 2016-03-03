@@ -2,8 +2,10 @@
 
 use nobackend\Mailer\AuthMailer;
 use nobackend\Repository\Contracts\UserRepositoryInterface;
-use nobackend\Repository\RepoFactory;
-use nobackend\Repository\RepositoryNotFoundException;
+use nobackend\Repository\{
+    RepoFactory,
+    RepositoryNotFoundException
+};
 
 class Auth
 {

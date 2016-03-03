@@ -1,7 +1,9 @@
 <?php namespace nobackend\Mailer;
 
-use nobackend\Mailer\Sender\PhpSender;
-use nobackend\Mailer\Sender\SenderInterface;
+use nobackend\Mailer\Sender\{
+    PhpSender,
+    SenderInterface
+};
 
 class AbstractMailer
 {

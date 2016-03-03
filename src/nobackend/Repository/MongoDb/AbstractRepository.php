@@ -1,12 +1,16 @@
 <?php namespace nobackend\Repository\MongoDb;
 
-use MongoDB\Driver\Cursor;
-use nobackend\Config;
-use nobackend\Repository\Contracts\AbstractRepositoryInterface;
-use \MongoDB\Driver\Manager;
-use \MongoDB\Driver\Query;
-use \MongoDB\Driver\BulkWrite;
-use \MongoDB\Driver\WriteConcern;
+use nobackend\{
+    Config,
+    Repository\Contracts\AbstractRepositoryInterface
+};
+use \MongoDB\Driver\{
+    BulkWrite,
+    Cursor,
+    Manager,
+    Query,
+    WriteConcern
+};
 
 abstract class AbstractRepository implements AbstractRepositoryInterface
 {

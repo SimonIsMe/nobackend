@@ -1,10 +1,12 @@
 <?php namespace nobackend\Request;
 
-use nobackend\Validator\EmailValidator;
-use nobackend\Validator\EqualsValidator;
-use nobackend\Validator\ProjectIdValidator;
-use nobackend\Validator\RequiredValidator;
-use nobackend\Validator\StringLengthMinValidator;
+use nobackend\Validator\{
+    EmailValidator,
+    EqualsValidator,
+    ProjectIdValidator,
+    RequiredValidator,
+    StringLengthMinValidator
+};
 
 class ApiRegisterRequest extends AbstractRequest
 {

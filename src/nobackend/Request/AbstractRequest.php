@@ -1,8 +1,10 @@
 <?php  namespace nobackend\Request;
 
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\{
+    JsonResponse,
+    Request,
+    Response
+};
 
 abstract class AbstractRequest extends Request
 {
