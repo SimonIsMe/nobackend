@@ -11,6 +11,13 @@ class ProjectIdValidator extends AbstractValidator
      */
     public function validate() : bool
     {
+        if ($this->getValue() == 'nobackend') {
+            return true;
+        }
+
+        //  todo
+        //  sprawdzenie Project ID
+
         return true;
     }
 }

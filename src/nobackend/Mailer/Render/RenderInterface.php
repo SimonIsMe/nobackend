@@ -1,4 +1,4 @@
-<?php namespace nobackend\Mailer;
+<?php namespace nobackend\Mailer\Render;
 
 interface RenderInterface
 {
@@ -6,7 +6,7 @@ interface RenderInterface
      * @param $fileName
      * @param array $data
      *
-     * @return array
+     * @return string
      */
-    public function render(string $fileName, array $data = []) : array;
+    public function render(string $fileName, array $data = []) : string;
 }

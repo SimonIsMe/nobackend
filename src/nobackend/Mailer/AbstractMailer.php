@@ -4,6 +4,10 @@ use nobackend\Mailer\Sender\{
     PhpSender,
     SenderInterface
 };
+use nobackend\Mailer\Render\{
+    TwigRender,
+    TwigRendererInterface
+};
 
 class AbstractMailer
 {
@@ -26,15 +30,16 @@ class AbstractMailer
     /**
      * @param string $fromEmail
      * @param string $fromName
+     * @param string $toEmail
      * @param string $title
      * @param string $viewName
      * @param array $data = []
      *
      * @return void
      */
-    protected function _send(string $fromEmail, string $fromName, string $title, string $viewName, array $data = [])
+    protected function _send(string $fromEmail, string $fromName, string $toEmail, string $title, string $viewName, array $data = [])
     {
         $body = $this->_render->render($viewName, $data);
-        $this->_sender->send($fromEmail, $fromName, $title, $body);
+        $this->_sender->send($fromEmail, $fromName, $toEmail, $title, $body);
     }
 }

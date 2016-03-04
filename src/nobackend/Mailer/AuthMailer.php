@@ -1,28 +1,32 @@
 <?php namespace nobackend\Mailer;
 
 use nobackend\Config;
-use nobackend\Repository\Contracts\UserRepositoryInterface;
-use nobackend\Repository\RepoFactory;
+use nobackend\Model\User;
 
 class AuthMailer extends AbstractMailer
 {
-
     /**
+     * @param string $projectId
      * @param string $userId
      * @param string $activationToken
      *
      * @return void
+     *
+     * @throws \nobackend\Repository\RepositoryNotFoundException
      */
-    public function register(string $userId, string $activationToken)
+    public function register(string $projectId, string $userId, string $activationToken)
     {
-        $userData = RepoFactory::get(UserRepositoryInterface::NAME)->find($userId);
+        $user = new User($projectId, $userId);
+        $user->activationToken = $activationToken;
+        $user->save();
 
         $this->_send(
             Config::get('mail.register.email'),
             Config::get('mail.register.name'),
+            $user->email,
             'Confirm your e-mail address',
-            'register',
-            array_merge($userData, ['activationToken' => $activationToken])
+            'register.twig',
+            ['user' => $user]
         );
     }
 }

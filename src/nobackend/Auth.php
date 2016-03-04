@@ -1,5 +1,6 @@
 <?php namespace nobackend;
 
+use Carbon\Carbon;
 use nobackend\Mailer\AuthMailer;
 use nobackend\Repository\Contracts\UserRepositoryInterface;
 use nobackend\Repository\{
@@ -48,11 +49,12 @@ class Auth
             'email' => $email,
             'password' => self::_hashPassword($password),
             'activationToken' => $activationToken,
-            'is_active' => self::ACCOUNT_NO_ACTIVE
+            'is_active' => self::ACCOUNT_NO_ACTIVE,
+            'created_at' => Carbon::now()
         ]);
 
         $mailer = new AuthMailer();
-        $mailer->register($userId, $activationToken);
+        $mailer->register($projectId, $userId, $activationToken);
     }
 
     /**

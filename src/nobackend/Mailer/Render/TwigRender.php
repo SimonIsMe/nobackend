@@ -1,4 +1,4 @@
-<?php namespace nobackend\Mailer;
+<?php namespace nobackend\Mailer\Render;
 
 use Twig_Environment;
 use Twig_Loader_Filesystem;
@@ -24,6 +24,6 @@ class TwigRender implements RenderInterface
      */
     public function render(string $file, array $data = []) : string
     {
-        return $this->_twig->render('hello.twig', array('name' => 'Fabien'));
+        return $this->_twig->render($file, array('name' => 'Fabien'));
     }
 }

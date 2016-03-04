@@ -21,7 +21,7 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
 
     public function __construct()
     {
-        $stringConnection = 'mongodb://' . Config::get('database.host') . '.' . Config::get('database.port');
+        $stringConnection = 'mongodb://' . Config::get('database.host') . ':' . Config::get('database.port');
         $this->_manager = new Manager($stringConnection);
     }
 
@@ -29,12 +29,17 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
      * @param string $projectId
      * @param string $id
      *
-     * @return array
+     * @return stdClass
      */
-    public function find(string $projectId, string $id) : array
+    public function find(string $projectId, string $id) : \stdClass
     {
-        $results = $this->query($this->_getCollectionName($projectId), new Query(['_id' => $id]));
-        return $results->toArray();
+        $results = $this->query($this->_getCollectionName($projectId), new Query(['_id' => new \MongoDB\BSON\ObjectID($id)]));
+        $array = $results->toArray();
+
+        if (empty($array)) {
+            return null;
+        }
+        return $array[0];
     }
 
     /**
@@ -52,17 +57,31 @@ abstract class AbstractRepository implements AbstractRepositoryInterface
 
     /**
      * @param string $projectId
+     * @param string $key
+     * @param string $value
+     *
+     * @return int
+     */
+    public function countBy(string $projectId, string $key, string $value) : int
+    {
+        $results = $this->query($this->_getCollectionName($projectId), new Query([$key => $value]));
+
+        //  todo
+        return 1;
+    }
+
+    /**
+     * @param string $projectId
      * @param array $data
      *
      * @return string
      */
-    public function create(string $projectId, array $data) : string
+    public function create(string $projectId, array $data)
     {
         $bulk = new BulkWrite();
-        $bulk->insert($data);
+        $insert = $bulk->insert($data);
         $this->_manager->executeBulkWrite($this->_getCollectionName($projectId), $bulk, new WriteConcern(WriteConcern::MAJORITY, 1000));
-
-        //  TODO:   return _id
+        return $insert->__toString();
     }
 
     /**
