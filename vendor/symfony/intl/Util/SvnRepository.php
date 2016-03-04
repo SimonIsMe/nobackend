@@ -15,14 +15,14 @@ use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Intl\Exception\RuntimeException;
 
 /**
- * A SVN nobackend containing ICU data.
+ * A SVN repository containing ICU data.
  *
  * @author Bernhard Schussek <bschussek@gmail.com>
  */
 class SvnRepository
 {
     /**
-     * @var string The path to the nobackend.
+     * @var string The path to the repository.
      */
     private $path;
 
@@ -40,7 +40,7 @@ class SvnRepository
      * Downloads the ICU data for the given version.
      *
      * @param string $url       The URL to download from.
-     * @param string $targetDir The directory in which to store the nobackend.
+     * @param string $targetDir The directory in which to store the repository.
      *
      * @return SvnRepository The directory where the data is stored.
      *
@@ -71,9 +71,9 @@ class SvnRepository
     }
 
     /**
-     * Reads the SVN nobackend at the given path.
+     * Reads the SVN repository at the given path.
      *
-     * @param string $path The path to the nobackend.
+     * @param string $path The path to the repository.
      */
     public function __construct($path)
     {
@@ -81,9 +81,9 @@ class SvnRepository
     }
 
     /**
-     * Returns the path to the nobackend.
+     * Returns the path to the repository.
      *
-     * @return string The path to the nobackend.
+     * @return string The path to the repository.
      */
     public function getPath()
     {
@@ -91,9 +91,9 @@ class SvnRepository
     }
 
     /**
-     * Returns the URL of the nobackend.
+     * Returns the URL of the repository.
      *
-     * @return string The URL of the nobackend.
+     * @return string The URL of the repository.
      */
     public function getUrl()
     {
@@ -101,7 +101,7 @@ class SvnRepository
     }
 
     /**
-     * Returns the last commit of the nobackend.
+     * Returns the last commit of the repository.
      *
      * @return SvnCommit The last commit.
      */
@@ -115,7 +115,7 @@ class SvnRepository
     }
 
     /**
-     * Returns information about the SVN nobackend.
+     * Returns information about the SVN repository.
      *
      * @return \SimpleXMLElement The XML result from the "svn info" command.
      *

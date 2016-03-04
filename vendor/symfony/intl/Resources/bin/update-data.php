@@ -40,10 +40,10 @@ Usage: php update-icu-component.php <path/to/icu/source> <path/to/icu/build>
 
 Updates the ICU data for Symfony to the latest version of ICU.
 
-If you downloaded the SVN nobackend before, you can pass the path to the
-nobackend source in the first optional argument.
+If you downloaded the SVN repository before, you can pass the path to the
+repository source in the first optional argument.
 
-If you also built the nobackend before, you can pass the directory where that
+If you also built the repository before, you can pass the directory where that
 build is stored in the second parameter. The build directory needs to contain
 the subdirectories bin/ and lib/.
 
@@ -85,7 +85,7 @@ if ($argc >= 2) {
     $sourceDir = $argv[1];
     $svn = new SvnRepository($sourceDir);
 
-    echo "Using existing SVN nobackend at {$sourceDir}.\n";
+    echo "Using existing SVN repository at {$sourceDir}.\n";
 } else {
     echo "Starting SVN checkout for version $shortIcuVersion. This may take a while...\n";
 
